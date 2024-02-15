@@ -13,6 +13,12 @@
     <div class="container">
         <h1>To-Do List</h1>
 
+        <div class="main__filters">
+            <button id="filter-all" class="active">Все задачи</button>
+            <button disabled id="filter-active">Активные</button>
+            <button disabled id="filter-completed">Выполненные</button>
+        </div>
+
         <form id="form">
             <label for="task-title">
                 <input type="text" id="task-title" placeholder="Введите заголовок задачи" required>
@@ -20,16 +26,10 @@
             <label for="task-description">
                 <textarea id="task-description" placeholder="Введите описание задачи"></textarea>
             </label>
-            <button type="submit">Добавить задачу</button>
+            <button type="submit">&#10004; добавить пункт</button>
         </form>
 
-        <div class="main__filter">
-            <button id="filter-all" class="main__active">Все</button>
-            <button id="filter-active">Активные</button>
-            <button id="filter-completed">Выполненные</button>
-        </div>
-
-        <ul id="task-list"></ul>
+        <ul class="main__list" id="task-list"></ul>
     </div>
 </section>
 
