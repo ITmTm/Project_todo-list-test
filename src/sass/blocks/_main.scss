@@ -1,0 +1,62 @@
+.main {
+  h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+  }
+  &__filters {
+    display: flex;
+    column-gap: 20px;
+    margin: 20px 0;
+    justify-content: flex-start;
+
+    button {
+      padding: 5px 10px;
+      border: 1px solid #007bff;
+      border-radius: 5px;
+      background-color: transparent;
+      cursor: pointer;
+    }
+
+    button.active {
+      background-color: #007bff;
+      color: #fff;
+    }
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+
+    button {
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: .2s all ease;
+      &:hover {
+        background-color: #0056b3;
+        transition: .3s all ease;
+      }
+    }
+  }
+
+  label {
+    margin-bottom: 10px;
+  }
+
+  input[type="text"],
+  textarea {
+    width: 500px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    &:focus {
+      border: 1px solid black;
+    }
+  }
+}
