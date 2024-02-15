@@ -1,0 +1,48 @@
+.main {
+  button {
+    padding: 5px 10px;
+    border: 1px solid #007bff;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  button.active {
+    background-color: #007bff;
+    color: #fff;
+  }
+
+  form {
+    button {
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: .2s all ease;
+      &:hover {
+        background-color: #0056b3;
+        transition: .3s all ease;
+      }
+    }
+  }
+
+  .delete-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: url("../icons/deleted.svg") no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    border: none;
+    margin-left: 20px;
+    &:hover {
+      opacity: .8;
+    }
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+}
