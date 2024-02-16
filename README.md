@@ -40,6 +40,7 @@
 
 
 
+![Screenshot_1](https://github.com/ITmTm/Project_todo-list-test/assets/98873757/5f687d78-0dbf-4520-adb0-948a84b90d1e)
 
 
 
